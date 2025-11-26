@@ -1,8 +1,13 @@
 {
+  // Estende as configurações padrão de desenvolvimento do webhint
   "extends": [
     "development"
   ],
+  
+  // Define regras específicas para o validador
   "hints": {
+    // Desativa a regra que detecta estilos inline (style="...")
+    // Útil quando você usa estilos inline no HTML
     "no-inline-styles": "off"
   }
 }
